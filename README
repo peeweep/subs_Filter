@@ -1,0 +1,36 @@
+project: https://github.com/peeweep/subs_Filter
+
+Use include and exclude key to filter subscription.
+
+Support:
+    * shadowsocksR
+    * shadowsocksD
+    * vmess
+
+Todo:
+    * shadowsocks
+
+Usage:
+    http://0.0.0.0:17304/?url=https://your_subscribe
+    http://0.0.0.0:17304/?url=https://your_subscribe&include=keyword
+    http://0.0.0.0:17304/?url=https://your_subscribe&exclude=keyword
+    http://0.0.0.0:17304/?url=https://your_subscribe&include=keyword1|keyword2&exclude=keyword3|keyword4
+  
+| arg     | default | type   |
+|---------|---------|--------|
+| url     | except  | string |
+| include | None    | list   |
+| exclude | None    | list   |
+
+Demo:
+    https://filter.peeweep.de/
+
+
+Depends:
+    python3, python3-requests
+
+Run:
+    python3 httpd.py
+
+Ref:
+    ne1llee, "V2ray、SSR subscribe convert to Clash、QuantumultX", 11 Nov 2019, available at https://github.com/ne1llee/v2ray2clash
